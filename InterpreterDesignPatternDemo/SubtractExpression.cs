@@ -7,7 +7,7 @@
 * 
 * Project     = SubtractExpression
 *
-* Description = 
+* Description = Contains a non terminal subtract expression.
 *****************************************************************************/
 
 namespace InterpreterDesignPatternDemo
@@ -31,6 +31,10 @@ namespace InterpreterDesignPatternDemo
             _leftExpression = left;
             _rightExpression = right;
         }
+        /// <summary>
+        /// Subtracts the value associated with the left and right expression.
+        /// </summary>
+        /// <returns>The difference of the values of left and right expressions</returns>
         public int Interpret()
         {
             return _leftExpression.Interpret() - _rightExpression.Interpret();
