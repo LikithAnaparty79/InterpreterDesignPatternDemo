@@ -16,19 +16,15 @@ namespace InterpreterDesignPatternDemo.Tests
     public class AddExpressionTests
     {
         [TestMethod]
-        public void Interpret_ShouldReturnSumOfTwoNumbers()
+        public void InterpretShouldReturnSumOfTwoNumbers()
         {
-            // Arrange
             var leftExpression = new NumberExpression( 5 );
             var rightExpression = new NumberExpression( 10 );
             var addExpression = new AddExpression( leftExpression , rightExpression );
-            int expected = 15;
-
-            // Act
             int result = addExpression.Interpret();
 
             // Assert
-            Assert.AreEqual( expected , result );
+            Assert.AreEqual( 15 , result );
         }
     }
 }

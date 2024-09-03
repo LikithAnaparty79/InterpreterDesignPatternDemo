@@ -16,16 +16,12 @@ namespace InterpreterDesignPatternDemo.Tests
     public class NumberExpressionTests
     {
         [TestMethod]
-        public void Interpret_ShouldReturnNumber()
+        public void InterpretShouldReturnNumber()
         {
-            // Arrange
             int expected = 5;
             var numberExpression = new NumberExpression( expected );
-
-            // Act
             int result = numberExpression.Interpret();
 
-            // Assert
             Assert.AreEqual( expected , result );
         }
     }

@@ -16,18 +16,14 @@ namespace InterpreterDesignPatternDemo.Tests
     public class SubtractExpressionTests
     {
         [TestMethod]
-        public void Interpret_ShouldReturnDifferenceOfTwoNumbers()
+        public void InterpretShouldReturnDifferenceOfTwoNumbers()
         {
-            // Arrange
             var leftExpression = new NumberExpression( 10 );
             var rightExpression = new NumberExpression( 5 );
             var subtractExpression = new SubtractExpression( leftExpression , rightExpression );
             int expected = 5;
-
-            // Act
             int result = subtractExpression.Interpret();
 
-            // Assert
             Assert.AreEqual( expected , result );
         }
     }

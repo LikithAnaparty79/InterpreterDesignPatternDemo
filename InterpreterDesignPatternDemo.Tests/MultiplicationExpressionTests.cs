@@ -1,4 +1,15 @@
-﻿
+﻿/******************************************************************************
+* Filename    = SubtractExpression.cs
+*
+* Author      = Likith Anaparty
+*
+* Product     = InterpreterDesignPatternDemo
+* 
+* Project     = SubtractExpression
+*
+* Description = 
+*****************************************************************************/
+
 namespace InterpreterDesignPatternDemo.Tests
 {
     [TestClass]
@@ -6,18 +17,13 @@ namespace InterpreterDesignPatternDemo.Tests
     {
         [TestMethod]
         public void InterpretShouldReturnProductOfTwoNumbers()
-        {
-            // Arrange
+        { 
             var leftExpression = new NumberExpression( 5 );
             var rightExpression = new NumberExpression( 10 );
             var multiplyExpression = new MultiplyExpression( leftExpression , rightExpression );
-            int expected = 50;
-
-            // Act
             int result = multiplyExpression.Interpret();
 
-            // Assert
-            Assert.AreEqual( expected , result );
+            Assert.AreEqual( 50 , result );
         }
     }
 }

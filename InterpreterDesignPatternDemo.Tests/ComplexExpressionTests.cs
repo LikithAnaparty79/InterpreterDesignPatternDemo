@@ -15,41 +15,29 @@ namespace InterpreterDesignPatternDemo.Tests
     public class ComplexExpressionTests
     {
         [TestMethod]
-        public void Interpret_ShouldEvaluateComplexExpression()
+        public void InterpretShouldEvaluateComplexExpression()
         {
-            // Arrange
-            var five = new NumberExpression( 5 );
+            var eight = new NumberExpression( 8 );
             var ten = new NumberExpression( 10 );
-            var two = new NumberExpression( 2 );
+            var nine = new NumberExpression( 9 );
             var three = new NumberExpression( 3 );
-
-            var add1 = new AddExpression( five , ten );   // (5 + 10)
-            var add2 = new AddExpression( two , three );  // (2 + 3)
-
-            var complexExpression = new SubtractExpression( add1 , add2 ); // (5 + 10) - (2 + 3)
-            int expected = 10;
-
-            // Act
+            var add1 = new AddExpression( three , ten );   
+            var add2 = new AddExpression( nine , eight );  
+            var complexExpression = new SubtractExpression( add1 , add2 );
             int result = complexExpression.Interpret();
 
-            // Assert
-            Assert.AreEqual( expected , result );
+            Assert.AreEqual( -4 , result );
         }
 
         [TestMethod]
-        public void Interpret_ShouldReturnZeroForEqualOperandsInSubtraction()
+        public void InterpretShouldReturnZeroForEqualOperandsInSubtraction()
         {
-            // Arrange
             var ten1 = new NumberExpression( 10 );
             var ten2 = new NumberExpression( 10 );
-
             var subtractExpression = new SubtractExpression( ten1 , ten2 ); // 10 - 10
             int expected = 0;
-
-            // Act
             int result = subtractExpression.Interpret();
 
-            // Assert
             Assert.AreEqual( expected , result );
         }
     }
