@@ -5,9 +5,9 @@
 *
 * Product     = InterpreterDesignPatternDemo
 * 
-* Project     = SubtractExpression
+* Project     = NumberExpressionTests
 *
-* Description = 
+* Description = Unit test for number expression
 *****************************************************************************/
 
 namespace InterpreterDesignPatternDemo.Tests

@@ -7,7 +7,7 @@
 * 
 * Project     = SubtractExpression
 *
-* Description = 
+* Description = Client program to run the calculator
 *****************************************************************************/
 
 using InterpreterDesignPatternDemo;
@@ -16,15 +16,15 @@ class Program
 {
     public static void Main()
     {
-        Expression five = new NumberExpression( 5 );
-        Expression ten = new NumberExpression( 10 );
-        Expression two = new NumberExpression( 2 );
-        Expression three = new NumberExpression( 3 );
+        IExpression five = new NumberExpression( 5 );
+        IExpression ten = new NumberExpression( 10 );
+        IExpression two = new NumberExpression( 2 );
+        IExpression three = new NumberExpression( 3 );
 
-        Expression add1 = new AddExpression( five , ten );
-        Expression add2 = new AddExpression(two, three);
+        IExpression add1 = new AddExpression( five , ten );
+        IExpression add2 = new AddExpression(two, three);
 
-        Expression subtract = new SubtractExpression( add1 , add2 );
+        IExpression subtract = new SubtractExpression( add1 , add2 );
 
         int result = subtract.Interpret();
 

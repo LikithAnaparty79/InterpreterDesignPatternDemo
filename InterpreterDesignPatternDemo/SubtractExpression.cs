@@ -15,10 +15,10 @@ namespace InterpreterDesignPatternDemo
     /// <summary>
     /// Creates a subtract expression implementing interpret method.
     /// </summary>
-    public class SubtractExpression : Expression
+    public class SubtractExpression : IExpression
     {
-        private readonly Expression _leftExpression; // For the left operand of the expression
-        private readonly Expression _rightExpression; // For the right operand of the expression
+        private readonly IExpression _leftExpression; // For the left operand of the expression
+        private readonly IExpression _rightExpression; // For the right operand of the expression
 
         /// <summary>
         /// Initialises the left and right expressions
@@ -26,7 +26,7 @@ namespace InterpreterDesignPatternDemo
         /// <param name="left">The left expression of subtract.</param>
         /// <param name="right">The right expression of subtract.</param>
 
-        public SubtractExpression(Expression left, Expression right)
+        public SubtractExpression(IExpression left, IExpression right)
         {
             _leftExpression = left;
             _rightExpression = right;

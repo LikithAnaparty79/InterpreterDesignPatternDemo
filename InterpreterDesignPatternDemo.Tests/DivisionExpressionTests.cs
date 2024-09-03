@@ -2,15 +2,15 @@
 
 namespace InterpreterDesignPatternDemo.Tests
 /******************************************************************************
-* Filename    = SubtractExpression.cs
+* Filename    = DivisionExpressionTests.cs
 *
 * Author      = Likith Anaparty
 *
 * Product     = InterpreterDesignPatternDemo
 * 
-* Project     = SubtractExpression
+* Project     = DivisionExpressionTests
 *
-* Description = 
+* Description = Unit test for divide expression
 *****************************************************************************/
 
 namespace InterpreterDesignPatternDemo

@@ -1,13 +1,13 @@
 ﻿/******************************************************************************
-* Filename    = SubtractExpression.cs
+* Filename    = SubtractExpressionTests.cs
 *
 * Author      = Likith Anaparty
 *
 * Product     = InterpreterDesignPatternDemo
 * 
-* Project     = SubtractExpression
+* Project     = SubtractExpressionTests
 *
-* Description = 
+* Description = Unit test for subtract expression
 *****************************************************************************/
 
 namespace InterpreterDesignPatternDemo.Tests

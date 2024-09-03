@@ -5,14 +5,14 @@
 *
 * Product     = InterpreterDesignPatternDemo
 * 
-* Project     = SubtractExpression
+* Project     = NumberExpression
 *
-* Description = 
+* Description = Creates a terminal number expression
 *****************************************************************************/
 
 namespace InterpreterDesignPatternDemo
 {
-    public class NumberExpression : Expression
+    public class NumberExpression : IExpression
     {
         private int _number;
         public NumberExpression(int number)

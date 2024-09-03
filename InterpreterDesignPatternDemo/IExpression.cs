@@ -7,12 +7,12 @@
 * 
 * Project     = SubtractExpression
 *
-* Description = 
+* Description = Interface
 *****************************************************************************/
 
 namespace InterpreterDesignPatternDemo
 {
-    public interface Expression
+    public interface IExpression
     {
         int Interpret();
     }
