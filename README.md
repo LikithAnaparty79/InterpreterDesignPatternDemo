@@ -8,6 +8,7 @@ In my assignment-1, the interpreter design pattern is demonstrated through the i
 Addition, Subtraction, Multiplication, Division.
 
 # Design
+![Class Diagram](https://github.com/LikithAnaparty79/InterpreterDesignPatternDemo/blob/main/image/ClassDiagram.png)
 
 **Components of the Interpreter Design Pattern Implemented:**
 1) Expression Interface
