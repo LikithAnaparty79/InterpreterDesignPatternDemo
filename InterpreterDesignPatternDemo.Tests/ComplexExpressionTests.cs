@@ -35,18 +35,23 @@ namespace InterpreterDesignPatternDemo.Tests
             Assert.AreEqual( 221 , result );
         }
         // <summary>
-        /// Tests if 10 - 10 = 0
+        /// Tests if (((22 / 11) * 10) + 9) - 8 = 21
         /// </summary>
         [TestMethod]
         public void InterpretShouldReturnZeroForEqualOperandsInSubtraction()
         {
-            var ten1 = new NumberExpression( 10 );
-            var ten2 = new NumberExpression( 10 );
-            var subtractExpression = new SubtractExpression( ten1 , ten2 ); // 10 - 10
-            int expected = 0;
+            var twentyTwo = new NumberExpression( 22 );
+            var eleven = new NumberExpression( 11 );
+            var ten = new NumberExpression( 10 );
+            var nine = new NumberExpression( 9 );
+            var eight = new NumberExpression( 8 );
+            var diviveExpression = new DivideExpression(twentyTwo, eleven);
+            var multiplyExpression = new MultiplyExpression(diviveExpression, ten);
+            var addExpression = new AddExpression(multiplyExpression, nine);
+            var subtractExpression = new SubtractExpression(addExpression , eight);
             int result = subtractExpression.Interpret();
 
-            Assert.AreEqual( expected , result );
+            Assert.AreEqual( 21, result );
         }
     }
 }
