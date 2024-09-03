@@ -18,7 +18,7 @@ namespace InterpreterDesignPatternDemo.Tests
     public class ComplexExpressionTests
     {
         /// <summary>
-        /// Tests if ((3+10) - (9+8)) = -4
+        /// Tests if ((3+10) * (9+8)) = 221
         /// </summary>
         [TestMethod]
         public void InterpretShouldEvaluateComplexExpression()
@@ -29,10 +29,10 @@ namespace InterpreterDesignPatternDemo.Tests
             var three = new NumberExpression( 3 );
             var add1 = new AddExpression( three , ten );   
             var add2 = new AddExpression( nine , eight );  
-            var complexExpression = new SubtractExpression( add1 , add2 );
+            var complexExpression = new MultiplyExpression( add1 , add2 );
             int result = complexExpression.Interpret();
 
-            Assert.AreEqual( -4 , result );
+            Assert.AreEqual( 221 , result );
         }
         // <summary>
         /// Tests if 10 - 10 = 0
