@@ -12,9 +12,15 @@
 
 namespace InterpreterDesignPatternDemo.Tests
 {
+    /// <summary>
+    /// Unit test for comptuting subtraction of two expressions
+    /// </summary>
     [TestClass]
     public class SubtractExpressionTests
     {
+        /// <summary>
+        /// Tests if 10 - 5 = 5
+        /// </summary>
         [TestMethod]
         public void InterpretShouldReturnDifferenceOfTwoNumbers()
         {

@@ -11,9 +11,15 @@
 *****************************************************************************/
 namespace InterpreterDesignPatternDemo.Tests
 {
+    /// <summary>
+    /// Unit test for comptuting values of complex expressions
+    /// </summary>
     [TestClass]
     public class ComplexExpressionTests
     {
+        /// <summary>
+        /// Tests if ((3+10) - (9+8)) = -4
+        /// </summary>
         [TestMethod]
         public void InterpretShouldEvaluateComplexExpression()
         {
@@ -28,7 +34,9 @@ namespace InterpreterDesignPatternDemo.Tests
 
             Assert.AreEqual( -4 , result );
         }
-
+        // <summary>
+        /// Tests if 10 - 10 = 0
+        /// </summary>
         [TestMethod]
         public void InterpretShouldReturnZeroForEqualOperandsInSubtraction()
         {

@@ -15,9 +15,15 @@ namespace InterpreterDesignPatternDemo.Tests
 
 namespace InterpreterDesignPatternDemo
 {
+    /// <summary>
+    /// Unit test for comptuting division of two expressions
+    /// </summary>
     [TestClass]
     public class DivideExpressionTests
     {
+        // <summary>
+        /// Tests if 20/4 = 5
+        /// </summary>
         [TestMethod]
         public void InterpretShouldReturnQuotientOfTwoNumbers()
         {
@@ -29,6 +35,10 @@ namespace InterpreterDesignPatternDemo
 
             Assert.AreEqual( expected , result );
         }
+
+        // <summary>
+        /// Tests if 20/0 throws an exception "DivideByZeroException"
+        /// </summary>
 
         [TestMethod]
         [ExpectedException( typeof( DivideByZeroException ) )]

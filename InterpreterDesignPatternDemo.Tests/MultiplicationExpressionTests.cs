@@ -12,9 +12,16 @@
 
 namespace InterpreterDesignPatternDemo.Tests
 {
+
+    /// <summary>
+    /// Unit test for comptuting multiplication of two expressions
+    /// </summary>
     [TestClass]
     public class MultiplyExpressionTests
     {
+        /// <summary>
+        /// Tests if 5 * 10 = 50
+        /// </summary>
         [TestMethod]
         public void InterpretShouldReturnProductOfTwoNumbers()
         { 

@@ -12,9 +12,15 @@
 
 namespace InterpreterDesignPatternDemo.Tests
 {
+    /// <summary>
+    /// Unit test for comptuting addition of two expressions
+    /// </summary>
     [TestClass]
     public class AddExpressionTests
     {
+        /// <summary>
+        /// Tests 5 + 10 = 15
+        /// </summary>
         [TestMethod]
         public void InterpretShouldReturnSumOfTwoNumbers()
         {
