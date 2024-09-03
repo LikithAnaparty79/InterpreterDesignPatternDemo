@@ -5,7 +5,7 @@
 *
 * Product     = InterpreterDesignPatternDemo
 * 
-* Project     = ultiplicationExpressionTests
+* Project     = MultiplicationExpressionTests
 *
 * Description = Unit test for multiply expression
 *****************************************************************************/

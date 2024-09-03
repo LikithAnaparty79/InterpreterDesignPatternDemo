@@ -1,7 +1,4 @@
-﻿
-
-namespace InterpreterDesignPatternDemo.Tests
-/******************************************************************************
+﻿/******************************************************************************
 * Filename    = DivisionExpressionTests.cs
 *
 * Author      = Likith Anaparty
@@ -13,7 +10,7 @@ namespace InterpreterDesignPatternDemo.Tests
 * Description = Unit test for divide expression
 *****************************************************************************/
 
-namespace InterpreterDesignPatternDemo
+namespace InterpreterDesignPatternDemo.Tests
 {
     /// <summary>
     /// Unit test for comptuting division of two expressions
